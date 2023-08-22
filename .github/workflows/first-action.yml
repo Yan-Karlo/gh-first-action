@@ -4,10 +4,13 @@ jobs:
   first-job:    #Job´s name
     runs-on: ubuntu-latest
     steps: 
-      - name:  Print greeting
-        run: echo "Hello World"
-      - name: Print Goodbye
-        run: echo "Done - bye"
-        
+      - name:  Print greeting    # step´s name
+        run: echo "Hello World"  # step´s command
+      - name: Print Goodbye      # step´s name
+        run: echo "Done - bye"   # step´s command
+      - name: Mutiple Commands   # running multiple commands at once
+        run: |
+          echo "Command 1"
+          echo "Command 2"
     
 
